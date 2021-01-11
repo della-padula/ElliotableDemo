@@ -1,0 +1,16 @@
+PODS:
+  - Elliotable (1.2.5)
+
+DEPENDENCIES:
+  - Elliotable
+
+SPEC REPOS:
+  trunk:
+    - Elliotable
+
+SPEC CHECKSUMS:
+  Elliotable: e669fa7a974658c4e0ee4be4b335f6a561f1b2cb
+
+PODFILE CHECKSUM: 5a06a554972a1374e556a4ece6cc0d060864e6dc
+
+COCOAPODS: 1.10.0

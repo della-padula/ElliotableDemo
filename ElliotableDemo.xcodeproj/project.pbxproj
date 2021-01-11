@@ -3,22 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B023F47B25AC1B120016F553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023F47A25AC1B120016F553 /* AppDelegate.swift */; };
-		B023F47D25AC1B120016F553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023F47C25AC1B120016F553 /* SceneDelegate.swift */; };
 		B023F47F25AC1B120016F553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023F47E25AC1B120016F553 /* ViewController.swift */; };
 		B023F48225AC1B120016F553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B023F48025AC1B120016F553 /* Main.storyboard */; };
 		B023F48425AC1B140016F553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B023F48325AC1B140016F553 /* Assets.xcassets */; };
 		B023F48725AC1B140016F553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B023F48525AC1B140016F553 /* LaunchScreen.storyboard */; };
+		E347EF568CC9F37195C4F0DF /* Pods_Timetable_Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187B59271402ED906097392C /* Pods_Timetable_Library.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B023F47725AC1B120016F553 /* Timetable Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timetable Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9D8D59D689442A075004C8 /* Pods-Timetable Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetable Library.debug.xcconfig"; path = "Target Support Files/Pods-Timetable Library/Pods-Timetable Library.debug.xcconfig"; sourceTree = "<group>"; };
+		11E96C88B610E563A79F5C0C /* Pods-Timetable Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetable Library.release.xcconfig"; path = "Target Support Files/Pods-Timetable Library/Pods-Timetable Library.release.xcconfig"; sourceTree = "<group>"; };
+		187B59271402ED906097392C /* Pods_Timetable_Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timetable_Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B023F47725AC1B120016F553 /* ElliotableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElliotableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B023F47A25AC1B120016F553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B023F47C25AC1B120016F553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B023F47E25AC1B120016F553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B023F48125AC1B120016F553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B023F48325AC1B140016F553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,60 +33,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E347EF568CC9F37195C4F0DF /* Pods_Timetable_Library.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA10623CC3EBE8698D99776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				187B59271402ED906097392C /* Pods_Timetable_Library.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B023F46E25AC1B120016F553 = {
 			isa = PBXGroup;
 			children = (
-				B023F47925AC1B120016F553 /* Timetable Library */,
+				B023F47925AC1B120016F553 /* ElliotableDemo */,
 				B023F47825AC1B120016F553 /* Products */,
+				E051B2D16562ADE07F5865E3 /* Pods */,
+				2AA10623CC3EBE8698D99776 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B023F47825AC1B120016F553 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B023F47725AC1B120016F553 /* Timetable Library.app */,
+				B023F47725AC1B120016F553 /* ElliotableDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B023F47925AC1B120016F553 /* Timetable Library */ = {
+		B023F47925AC1B120016F553 /* ElliotableDemo */ = {
 			isa = PBXGroup;
 			children = (
 				B023F47A25AC1B120016F553 /* AppDelegate.swift */,
-				B023F47C25AC1B120016F553 /* SceneDelegate.swift */,
 				B023F47E25AC1B120016F553 /* ViewController.swift */,
 				B023F48025AC1B120016F553 /* Main.storyboard */,
 				B023F48325AC1B140016F553 /* Assets.xcassets */,
 				B023F48525AC1B140016F553 /* LaunchScreen.storyboard */,
 				B023F48825AC1B140016F553 /* Info.plist */,
 			);
-			path = "Timetable Library";
+			path = ElliotableDemo;
+			sourceTree = "<group>";
+		};
+		E051B2D16562ADE07F5865E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D8D59D689442A075004C8 /* Pods-Timetable Library.debug.xcconfig */,
+				11E96C88B610E563A79F5C0C /* Pods-Timetable Library.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B023F47625AC1B120016F553 /* Timetable Library */ = {
+		B023F47625AC1B120016F553 /* ElliotableDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B023F48B25AC1B140016F553 /* Build configuration list for PBXNativeTarget "Timetable Library" */;
+			buildConfigurationList = B023F48B25AC1B140016F553 /* Build configuration list for PBXNativeTarget "ElliotableDemo" */;
 			buildPhases = (
+				E8F4FA37E63D756ED069461E /* [CP] Check Pods Manifest.lock */,
 				B023F47325AC1B120016F553 /* Sources */,
 				B023F47425AC1B120016F553 /* Frameworks */,
 				B023F47525AC1B120016F553 /* Resources */,
+				A0E412C25FD679C63B23677C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Timetable Library";
+			name = ElliotableDemo;
 			productName = "Timetable Library";
-			productReference = B023F47725AC1B120016F553 /* Timetable Library.app */;
+			productReference = B023F47725AC1B120016F553 /* ElliotableDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B023F47225AC1B120016F553 /* Build configuration list for PBXProject "Timetable Library" */;
+			buildConfigurationList = B023F47225AC1B120016F553 /* Build configuration list for PBXProject "ElliotableDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B023F47625AC1B120016F553 /* Timetable Library */,
+				B023F47625AC1B120016F553 /* ElliotableDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +155,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0E412C25FD679C63B23677C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timetable Library/Pods-Timetable Library-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timetable Library/Pods-Timetable Library-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Timetable Library/Pods-Timetable Library-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F4FA37E63D756ED069461E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timetable Library-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B023F47325AC1B120016F553 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +204,6 @@
 			files = (
 				B023F47F25AC1B120016F553 /* ViewController.swift in Sources */,
 				B023F47B25AC1B120016F553 /* AppDelegate.swift in Sources */,
-				B023F47D25AC1B120016F553 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +347,13 @@
 		};
 		B023F48C25AC1B140016F553 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9D8D59D689442A075004C8 /* Pods-Timetable Library.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6E4GUVUC9;
-				INFOPLIST_FILE = "Timetable Library/Info.plist";
+				INFOPLIST_FILE = ElliotableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +367,13 @@
 		};
 		B023F48D25AC1B140016F553 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E96C88B610E563A79F5C0C /* Pods-Timetable Library.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6E4GUVUC9;
-				INFOPLIST_FILE = "Timetable Library/Info.plist";
+				INFOPLIST_FILE = ElliotableDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B023F47225AC1B120016F553 /* Build configuration list for PBXProject "Timetable Library" */ = {
+		B023F47225AC1B120016F553 /* Build configuration list for PBXProject "ElliotableDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B023F48925AC1B140016F553 /* Debug */,
@@ -331,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B023F48B25AC1B140016F553 /* Build configuration list for PBXNativeTarget "Timetable Library" */ = {
+		B023F48B25AC1B140016F553 /* Build configuration list for PBXNativeTarget "ElliotableDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B023F48C25AC1B140016F553 /* Debug */,
