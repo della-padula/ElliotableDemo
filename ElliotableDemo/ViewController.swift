@@ -11,14 +11,14 @@ import Elliotable
 class ViewController: UIViewController, ElliotableDelegate, ElliotableDataSource {
     @IBOutlet var timetable: Elliotable!
     
-    let dayString: [String] = ["월", "화", "수", "목", "금"]
+    let dayString: [String] = ["월", "화", "수", "목", "금", "토"]
     
     let courseList: [ElliottEvent] = [ElliottEvent(courseId: "c0001", courseName: "Operating System", roomName: "IT Building 21204", professor: "TEST", courseDay: .tuesday, startTime: "12:00", endTime: "13:15", textColor: UIColor.white, backgroundColor: .purple), ElliottEvent(courseId: "c0002", courseName: "Operating System", roomName: "IT Building 21204", professor: "TEST", courseDay: .thursday, startTime: "20:00", endTime: "23:15", textColor: UIColor.white, backgroundColor: .blue), ElliottEvent(courseId: "c0002", courseName: "Operating System", roomName: "IT Building 21204", professor: "TEST", courseDay: .friday, startTime: "21:30", endTime: "22:15", textColor: UIColor.white, backgroundColor: .blue), ElliottEvent(courseId: "c0002", courseName: "Operating System", roomName: "IT Building 21204", professor: "TEST", courseDay: .tuesday, startTime: "21:15", endTime: "22:15", textColor: UIColor.white, backgroundColor: .blue)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timetable.courseItems = courseList
+//        timetable.courseItems = courseList
         
         timetable.delegate = self
         timetable.dataSource = self
@@ -40,6 +40,8 @@ class ViewController: UIViewController, ElliotableDelegate, ElliotableDataSource
         timetable.symbolTimeFontSize = 12
         timetable.symbolFontColor = UIColor(displayP3Red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
         timetable.symbolTimeFontColor = UIColor(displayP3Red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
+        
+        timetable.reloadData()
     }
  
     func courseItems(in elliotable: Elliotable) -> [ElliottEvent] {
