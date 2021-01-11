@@ -16,18 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-q5-kxE" customClass="Elliotable" customModule="Elliotable">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKi-m1-edW">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezB-R2-HpX">
+                                        <rect key="frame" x="87" y="345" width="240" height="128"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-q5-kxE" customClass="Elliotable" customModule="Elliotable">
+                                                <rect key="frame" x="0.0" y="-345" width="414" height="818"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Ngx-q5-kxE" firstAttribute="leading" secondItem="ezB-R2-HpX" secondAttribute="leading" id="AlR-cw-Zis"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ngx-q5-kxE" secondAttribute="bottom" id="RF4-NC-nvt"/>
+                                            <constraint firstItem="Ngx-q5-kxE" firstAttribute="top" secondItem="ezB-R2-HpX" secondAttribute="top" id="Yne-oC-5f0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ngx-q5-kxE" secondAttribute="trailing" id="yao-cW-tB3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ezB-R2-HpX" firstAttribute="height" relation="greaterThanOrEqual" secondItem="FKi-m1-edW" secondAttribute="height" id="D3X-q6-Sl9"/>
+                                    <constraint firstItem="ezB-R2-HpX" firstAttribute="width" secondItem="FKi-m1-edW" secondAttribute="width" id="jZS-Au-Mcy"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ngx-q5-kxE" secondAttribute="bottom" id="4ZK-iq-KAa"/>
-                            <constraint firstItem="Ngx-q5-kxE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FpU-6I-XaA"/>
-                            <constraint firstItem="Ngx-q5-kxE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tid-Fy-TAS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ngx-q5-kxE" secondAttribute="trailing" id="xkz-YS-ilO"/>
+                            <constraint firstItem="FKi-m1-edW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IR4-Kx-gVl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FKi-m1-edW" secondAttribute="trailing" id="Uxz-iu-nCl"/>
+                            <constraint firstItem="FKi-m1-edW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bSQ-TC-4fN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FKi-m1-edW" secondAttribute="bottom" id="wmY-ZK-rLs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -36,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="94"/>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
         </scene>
     </scenes>
     <resources>
